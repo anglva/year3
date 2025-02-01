@@ -1,0 +1,107 @@
+@media only screen and (max-width: 768px){
+    html{
+        height: 100%;
+    }
+    body { /*background-image: url(jar.jpg);*/
+            background-color: #58375A;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+            font-family: 'Courier New', Courier, monospace; 
+    }
+
+    #wrapper {
+        padding: 0%;
+        margin-top: 0%;
+        height: 100%;
+    }
+
+    h1 { display: block; text-align: center;
+         margin-left: auto; margin-right: auto;
+         color: #f2f2f2;
+    }
+    nav {display: block; padding: 5px;
+        color: #f2f2f2; font-size: medium; border-color: #f2f2f2;
+        text-align: center;
+    }
+    a {
+        text-decoration: none; color: #f2f2f2; border-style:solid;
+        padding: 5px; 
+    }
+    #play { padding: 18px; }
+    #apl{padding-left: 67.41px; padding-right: 67.41px;
+    }
+    #explore{ padding: 18px;
+    }
+    #aex{ padding-left: 53px; padding-right: 53px;
+        
+    }
+    #one{ padding: 18px;
+
+    }
+    #space {padding: 5px;
+        width: 300px;
+    }
+    #map {position: absolute; top: 200px; width: 359.33px; height:400px}
+    #pic{width: 350px; text-align: center;
+    }
+    #art{
+        text-align: center;
+    }
+    #game{color: #f2f2f2; padding-top: 20px; text-align: center;
+    }
+    #answer{ padding-top: 10px; display: none; }
+    button { color: #f2f2f2; background-color: #58375A; border-color: #f2f2f2;
+    }
+    #wDate, #wAnswer, #cAnswer, #winner{ display: none;}
+    #eye{position: absolute; top: 70px; display: none;}
+
+
+    /*Hamburger Menu*/
+    .container {
+        display: inline-block;
+        cursor: pointer;
+       position: absolute;
+       z-index: 100;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: #f2f2f2;
+        margin: 6px 0 6px 330px;
+        transition: 0.4s;
+        color: #f2f2f2;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-6px, -5px);
+    }
+
+    #Menu {
+        padding: 5px;
+        padding-top: 40px;
+        margin-left: 43%;
+        position: absolute;
+        z-index: 99;
+    }
+
+    #Menu a {
+        border-style:solid;
+        padding: 1px;
+    }
+
+    .items{
+        padding: 8px;
+    }
+
+}
