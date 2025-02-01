@@ -1,0 +1,178 @@
+@media only screen and (max-width: 768px){
+    html{
+        height: 100%;
+    }
+    body { /*background-image: url(jar.jpg);*/
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+            font-family: 'Courier New', Courier, monospace; 
+    }
+
+    #wrapper {
+        padding: 0%;
+        margin-top: 0%;
+        height: 100%;
+        color: #7ada54;
+    }
+
+    h1 { display: block; text-align: center;
+         margin-left: auto; margin-right: auto;
+         color: #7ada54;
+    }
+    nav {display: block; padding: 5px;
+        font-size: medium; border-color: #7ada54;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 50%;
+    }
+    a {
+        text-decoration: none; border-style:solid;
+        padding: 5px 50px; 
+        color: #7ada54
+    }
+
+    
+    /*New CSS*/
+    .button{
+        padding: 18px;
+    
+    }
+
+    #Loading{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+
+    #loading-bar{
+        display: flex;
+        align-items: center;
+        margin: 50% auto auto auto;
+        border: solid;
+        max-width: 130px;
+    }
+
+    #bar {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #content {
+        
+    }
+
+    #home {
+        padding: 5px;
+        font-size: medium;
+        text-align: center;
+        justify-content: center;
+        display: none;
+        align-items: center;
+        position: relative;
+        top: 475px;
+    }
+
+    #home a{
+        border-color: #f2f2f2;
+        color: #f2f2f2;
+    }
+
+    /*Hamburger Menu*/
+    .container {
+        display: inline-block;
+        cursor: pointer;
+       position: absolute;
+       z-index: 100;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: #f2f2f2;
+        margin: 6px 0 6px 330px;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-6px, -5px);
+    }
+
+    #Menu {
+        padding: 5px;
+        padding-top: 40px;
+        margin-left: 43%;
+        position: absolute;
+        z-index: 99;
+    }
+
+    #Menu a {
+        border-style:solid;
+        padding: 1px;
+        color: #f2f2f2;
+    }
+
+    .items{
+        padding: 8px;
+    }
+
+    /*Progress Bar*/
+    .progress-bar-container {
+        position: relative;
+        top: 10px;
+        margin: auto;
+        width: 90%;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      
+      .progress-bar {
+        width: 0%;
+        height: 100%;
+        background: white;
+        transition: width 5s linear;
+      }
+
+    .story {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        text-align: center;
+
+        height: 400px;
+        padding: 20px;
+        margin: 30px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        font-size:small;
+
+      }
+      
+      .story.active {
+        opacity: 1;
+      }
+
+
+}
+
