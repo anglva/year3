@@ -1,0 +1,113 @@
+
+
+@media only screen and (max-width: 768px){
+    html{
+        height: 100%;
+    }
+    body { background-image: url(../Images/jar.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+            font-family: 'Courier New', Courier, monospace; 
+    }
+
+    #wrapper {
+        padding: 0%;
+        margin-top: 0%;
+        height: 100%;
+    }
+
+    h1 { display: block; text-align: center;
+         margin-left: auto; margin-right: auto;
+         color: #0cf3e6;
+    }
+    .none {display: none;
+
+    }
+    #noon {display: none;
+
+    }
+    #moon {position: absolute; top: 10px;
+            display: block;
+            height: 120px; width: auto;
+            margin-top: 20%;
+
+    }
+    #herent {display: none;
+
+    }
+    #here { position: absolute; top: 110px;
+            left: 28px;
+            color:aliceblue;
+            font-size: 24px;
+            font-weight: bold;
+
+    }
+    .frame{ position: absolute; 
+             margin-top: 1px;  
+             width: 320px;
+             height: 350px;
+             margin-left: 20px;
+             display: none;
+    }
+    img {height: 120px; width: 320px;
+        margin-left: auto; margin-right: auto;
+        display: block;
+        margin-top: 370px;
+    }
+    p {position: absolute; top: 435px;
+        left: 50px;
+        font-size: 14px;
+
+    }
+    a{text-decoration: none; color: #f2f2f2; border-style:solid;
+        padding: 5px; 
+    }
+
+    /*Hamburger Menu*/
+    .container {
+        display: inline-block;
+        cursor: pointer;
+       position: absolute;
+       z-index: 100;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: #f2f2f2;
+        margin: 6px 0 6px 330px;
+        transition: 0.4s;
+        color: #f2f2f2;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-6px, -5px);
+    }
+
+    #Menu {
+        padding: 5px;
+        padding-top: 40px;
+        margin-left: 43%;
+        position: absolute;
+        z-index: 99;
+    }
+
+    #Menu a {
+        border-style:solid;
+        padding: 1px;
+    }
+
+    .items{
+        padding: 8px;
+    }
+}
