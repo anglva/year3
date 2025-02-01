@@ -1,7 +1,6 @@
 var backgroundColors = ["#5a9b40","#0dbcb3", "#931b0b", "#9d612c", "#58375A", ];
 var textColors = ["black", "black", "#c5e31c", "#f2f2f2","#f2f2f2", ];
 var music = ["Relief", "Esa Carita", "Mona Lisa", "The Boy and The Swan", "Impossible", "Darlin"];
-var times = [50, 133, 60, 65, 64];
 
 //Initialize content
 var i = 0;
@@ -30,7 +29,6 @@ const showNextStory = () => {
 
     audio.pause();
     audio = new Audio("audio/" + music[currentStory] + ".mp3");
-    audio.currentTime = times[currentStory];
     audio.play();
     background.style.backgroundColor = backgroundColors[currentStory];
     stories[currentStory].style.color = backgroundColors[currentStory];
@@ -51,7 +49,6 @@ const showPrevStory = () => {
 
         audio.pause();
         audio = new Audio("audio/" + music[currentStory] + ".mp3");
-        audio.currentTime = times[currentStory];
         audio.play();
         background.style.backgroundColor = backgroundColors[currentStory];
         active[0].style.color = backgroundColors[currentStory];
@@ -83,7 +80,6 @@ const restartProgress = () => {
 // Start the story progression
 const startProgression = () => {
   stories[currentStory].classList.add("active");
-  audio.currentTime = times[currentStory];
     audio.play();
   restartProgress();
   interval = setInterval(showNextStory, 15000);
